@@ -86,41 +86,69 @@
 
 
         
-        let admin = `Admin`;
-        let password = `TheMaster`;
-        let welcomeMessage = `Welcome!`;
+        // let admin = `Admin`;
+        // let password = `TheMaster`;
+        // let welcomeMessage = `Welcome!`;
 
-        let userPrompt = window.prompt(`Who's there?`);
-        let securityCheck = `What is the password?`;
+        // let userPrompt = window.prompt(`Who's there?`);
+        // let securityCheck = `What is the password?`;
 
-        // if (window.prompt(userPrompt) == admin ) {
-        //     window.prompt(securityCheck);
+        // // if (window.prompt(userPrompt) == admin ) {
+        // //     window.prompt(securityCheck);
+        // // } else {
+        // //     alert(`I don't know you`)
+        // // }
+
+        // if (userPrompt == admin ) {
+        //     let check = window.prompt(securityCheck);
+        //     if(check == password) {
+        //         alert(welcomeMessage);
+        //     } else {
+        //         alert(`Wrong Password!`);
+        //     }
         // } else {
-        //     alert(`I don't know you`)
+        //     if (userPrompt == null || userPrompt == '') {
+        //         alert(`Cancelled`)
+        //     }
+        //     else {
+        //         alert(`I don't know you!`)
+        //     }
+        // } // Finished first If statement 
+
+
+        // Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’
+        // let test = prompt("Who is there?", "");
+        
+        // if (test == 'ECMAScript') {
+        //     alert('Right!');
+        // } else {
+        //     alert(`You don't know? “ECMAScript”!`)
         // }
 
-        if (userPrompt == admin ) {
-            let check = window.prompt(securityCheck);
-            if(check == password) {
-                alert(welcomeMessage);
-            } else {
-                alert(`Wrong Password!`);
-            }
-        } else {
-            if (userPrompt == null || userPrompt == '') {
-                alert(`Cancelled`)
-            }
-            else {
-                alert(`I don't know you!`)
-            }
-        } // Finished first If statement 
+        // Using if..else, write the code which gets a number via prompt and then shows in alert:
+        // 1, if the value is greater than zero,
+        // -1, if less than zero,
+        // 0, if equals zero.
 
-
-        // if (securityCheck == password) {
-        //     alert(welcomeMessage)
+        // let numPrompt = prompt('Please enter a number', '');
+        // if (numPrompt > 0) {
+        //     alert('1')
+        // } else if (numPrompt < 0) {
+        //     alert('-1')
+        // } else if (numPrompt == 0) {
+        //     alert('0')
         // } else {
-        //     `Wrong password!`
+        //     alert(`That's not a number!`)
         // }
+
+        let login = 'employee';
+
+        let message = login == 'employee' ? 'Hello':
+            login == 'Director' ? 'Greetings' : 
+            login == '' ? 'No login' :
+            '';
+
+        alert(message)
 
     </script>
 
