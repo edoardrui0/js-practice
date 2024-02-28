@@ -177,33 +177,57 @@
 
 
         // learnt about functions, lines 180-206
-        function checkAge(age) {
-            if (age > 18) {
-                return true;
-            } else {
-                return confirm('Did parents allow you?');
-            }
+        // function checkAge(age) {
+        //     if (age > 18) {
+        //         return true;
+        //     } else {
+        //         return confirm('Did parents allow you?');
+        //     }
+        // }
+
+        // function checkAge(age) {
+        //    return (age > 18) ?  true :  confirm('Did parents allow you?');
+        // }
+
+        // function checkAge(age) {
+        //     return (age > 18) || confirm('Did parents allow you?');
+        // }
+
+        // function min(a, b) {
+        //     if (a < b) {
+        //         return a 
+        //     } else {
+        //         return b;
+        //     }
+        // }
+
+        // function min(a, b) {
+        //     return (a < b) ? a : b;
+        // }
+
+
+        // learnt about arrow functions, lines 211-230
+        // Replace Function Expressions with arrow functions in the code below: 
+        function ask(question, yes, no) {
+            if (confirm(question)) yes();
+            else no();
         }
 
-        function checkAge(age) {
-           return (age > 18) ?  true :  confirm('Did parents allow you?');
+        ask(
+            "Do you agree?",
+            function() { alert("You agreed."); },
+            function() { alert("You canceled the execution."); }
+        );
+
+        let ask = (question, yes, no) => {
+            confirm(question) ? yes() : no()
         }
 
-        function checkAge(age) {
-            return (age > 18) || confirm('Did parents allow you?');
-        }
-
-        function min(a, b) {
-            if (a < b) {
-                return a 
-            } else {
-                return b;
-            }
-        }
-
-        function min(a, b) {
-            return (a < b) ? a : b;
-        }
+        ask (
+            "Do you agree?",
+            () => alert("You agreed."),
+            () => alert("You canceled the execution.")
+        )
 
     </script>
 
