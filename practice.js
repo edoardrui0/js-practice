@@ -79,7 +79,7 @@ let replaceChar = (str) => {
   console.log(newStr);
 };
 
-replaceChar("Hello");
+// replaceChar("Hello");
 
 /* my main observation from this exercise is that i overcomplicated things, but that's to be expected at my skill level
   Bubb's answer
@@ -90,4 +90,36 @@ replaceChar("Hello");
     (0) + 1))
     .join('');
   console.log(moveCharsForward('hello'))
+*/
+
+/*  Exercise 4
+    ----------
+    Write a JavaScript program to get the current
+    date.
+    Expected Output:
+    mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+*/
+
+/*  Psuedocode for Ex4
+    1) Create func that acquires the current date
+    2) push the date in the expected format
+    3) 
+    4) 
+*/
+
+let getDate = () => {
+  let date = new Date();
+  let day = date.getDate();
+  let month = ("0" + (date.getMonth() + 1)).slice(-2);
+  let year = date.getFullYear();
+
+  let = currentDate = `${month}/${day}/${year}`;
+  console.log(currentDate);
+};
+
+getDate();
+
+/* 
+  Bubb's answer
+  He had the same solution as I did, except without the .slice()
 */
