@@ -100,13 +100,6 @@ let replaceChar = (str) => {
     mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 */
 
-/*  Psuedocode for Ex4
-    1) Create func that acquires the current date
-    2) push the date in the expected format
-    3) 
-    4) 
-*/
-
 let getDate = () => {
   let date = new Date();
   let day = date.getDate();
@@ -117,9 +110,33 @@ let getDate = () => {
   console.log(currentDate);
 };
 
-getDate();
+// getDate();
 
 /* 
   Bubb's answer
   He had the same solution as I did, except without the .slice()
+*/
+
+/*  Exercise 5
+    ----------
+    Write a JavaScript program to create a new
+    string, adding 'New!' in front of any given string.
+    If the current string beings with 'New!' already
+    then return the original string. 
+*/
+
+let addNew = (str) => {
+  if (str.startsWith("New!")) {
+    console.log(str);
+  } else {
+    console.log("New! " + str);
+  }
+};
+
+addNew("Shoes");
+
+/* 
+  Bubb's answer
+  const addNew = (str) =>
+    str.indexOf('New!') === 0 ? str : `New! ${str}`;
 */
