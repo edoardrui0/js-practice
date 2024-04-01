@@ -168,3 +168,27 @@ let blendedString = (str) => {
   const makeNewString = (str) => 
     str.length < 3 ? str : str.slice(0,3) + str.slice(-3);
 */
+
+/*  Exercise 7
+    ----------
+    Write a JS program to extract the first half of a 
+    string of even length.
+*/
+
+let strHalf = (str) => {
+  let x;
+  if (str.length % 2 == 0) {
+    x = str.length / 2;
+  } else {
+    x = str.length / 2 - 1;
+  }
+  let halfStr = str.substring(0, x);
+  console.log(halfStr);
+};
+
+strHalf("JavaScript");
+
+/* 
+  Bubb's answer
+  const firstHalf = (str) => str.slice(0, str.length / 2)
+*/
