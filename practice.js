@@ -133,10 +133,38 @@ let addNew = (str) => {
   }
 };
 
-addNew("Shoes");
+// addNew("Shoes");
 
 /* 
   Bubb's answer
   const addNew = (str) =>
     str.indexOf('New!') === 0 ? str : `New! ${str}`;
+*/
+
+/*  Exercise 6
+    ----------
+    Write a JS program to create a new string from a given string
+    taking the first 3 characters and the last 3 characters of a string
+    and adding them together. The string length must be 3 or more,
+    if not, the original string is returned
+*/
+
+let blendedString = (str) => {
+  let strLength = str.length;
+  // let firstThreeChar = str.slice(0, 3);
+  // let lastThreeChar = str.slice(-3);
+
+  if (strLength == 3) {
+    console.log(str);
+  } else {
+    console.log(str.slice(0, 3) + str.slice(-3));
+  }
+};
+
+// blendedString("123456abcdef");
+
+/* 
+  Bubb's answer
+  const makeNewString = (str) => 
+    str.length < 3 ? str : str.slice(0,3) + str.slice(-3);
 */
