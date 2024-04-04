@@ -210,4 +210,32 @@ let concatStr = (str1, str2) => {
   const concatenate = (str1, str2) => str1.slice(1) + str2.slice(1)
 */
 
-concatStr("Hello", "World");
+// concatStr("Hello", "World");
+
+/*  Exercise 9
+    ----------
+    Given two values, write a JS program to find out 
+    white one is nearest to 100
+*/
+
+let nearestNum = (num1, num2) => {
+  if (num1 != num2) {
+    let newNum1 = Math.abs(num1 - 100);
+    let newNum2 = Math.abs(num2 - 100);
+
+    if (newNum1 < newNum2) {
+      console.log(num1);
+    } else if (newNum1 > newNum2) {
+      console.log(num2);
+    }
+  } else {
+    console.log(false);
+  }
+};
+
+/* 
+  Bubb's answer
+  const closestTo100 = (a,b) => (100 - a) < (100 - b) ? a : b;
+*/
+
+nearestNum(50, 50);
