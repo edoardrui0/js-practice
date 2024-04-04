@@ -186,9 +186,28 @@ let strHalf = (str) => {
   console.log(halfStr);
 };
 
-strHalf("JavaScript");
+// strHalf("JavaScript");
 
 /* 
   Bubb's answer
   const firstHalf = (str) => str.slice(0, str.length / 2)
 */
+
+/*  Exercise 8
+    ----------
+    Write a JS program to concatenate two strings
+    except their first character.
+*/
+
+let concatStr = (str1, str2) => {
+  let newStr1 = str1.substring(1);
+  let newStr2 = str2.substring(1);
+  console.log(newStr1 + newStr2);
+};
+
+/* 
+  Bubb's answer
+  const concatenate = (str1, str2) => str1.slice(1) + str2.slice(1)
+*/
+
+concatStr("Hello", "World");
