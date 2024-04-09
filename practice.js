@@ -238,4 +238,17 @@ let nearestNum = (num1, num2) => {
   const closestTo100 = (a,b) => (100 - a) < (100 - b) ? a : b;
 */
 
-nearestNum(50, 50);
+// nearestNum(50, 50);
+
+/*  Exercise 10
+    ----------
+    Write a JS program to check a given string contains
+    2 to 4 occurrences of a specified character
+*/
+
+let checkOccurrences = (str, char) => {
+  const regex = new RegExp(`${char}{2,4}`);
+  return regex.test(str);
+};
+
+console.log(checkOccurrences("hpapyp", "p"));
